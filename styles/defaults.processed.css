@@ -1,0 +1,16 @@
+html {
+  margin: 0;
+  overflow: hidden;
+  background: url(https://picsum.photos/3500/2329/?random);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom center;
+  font-family: 'Roboto', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: default;
+}

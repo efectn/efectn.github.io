@@ -1,0 +1,96 @@
+.notifications-tab
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 40px
+	width: 25vw
+	min-width: 350px
+	background: rgba(0,0,0,0.85)
+	transform: translateX(100%)
+	-webkit-backdrop-filter: blur(5px)
+	transition: all 0.25s ease
+	&.show
+		transform: translateX(0)
+
+.browse
+	position: fixed
+	left: 50px
+	top: 0
+	bottom: 0
+	right: 0
+	background: rgb(70,70,70)
+	transform: translateY(40px)
+	opacity: 0
+	visibility: hidden
+	transition: all 0.15s ease
+	&.show
+		visibility: visible
+		opacity: 1
+		transform: translateY(0)
+	span
+		padding: 20px
+		color: lightgrey
+		font-size: 24px
+		display: block
+		width: 350px
+		transition: transform 0.25s ease, opacity 0.5s ease
+		&.hide
+			opacity: 0
+			transform: translateY(-100%)
+			transition: opacity 0.25s ease, transform 0.5s ease
+	input
+		dlay: block
+		outline: none
+		border: none
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		height: 40px
+		background: rgba(255,255,255,0.75)
+		padding: 10px
+		width: 100%
+		font-size: 17px
+		font-family: 'Roboto'
+		&:focus
+			background: rgba(255,255,255,1)
+	
+.message-window
+	min-height: 150px
+	min-width: 300px
+	background-color: whitesmoke
+	position: fixed
+	top: 100px 
+	left: 200px
+	box-shadow: 0 0 5px rgba(0,0,0,0.25)
+	font-size: 20px
+	.message
+		padding: 5px
+		display: inline-block
+		width: 400px
+	.controls
+		height: 30px
+		width: 100%
+		background: lightgrey
+		font-size: default
+		> span
+			float: right
+			line-height: 30px
+			padding: 0 5px
+			display: inline-block
+			&:hover
+				background: darkgrey
+			&:first-child:hover
+				background: crimson
+				color: white
+			//&:nth-child(2)
+				background-image: 
+				padding: 8px 0 0 0
+				box-shadow: 0 0 0 2px black inset
+				display: inline-block
+			//&:last-child
+				height: 2px
+				width: 15px
+				padding: 14px 0
+				background: black
+	

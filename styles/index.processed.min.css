@@ -1,0 +1,125 @@
+body{background:#f5f5f5}
+/*# sourceMappingURL=index.processed.min.css.map */
+ul .teal {
+  background-color: #189dad !important;
+  color: #fff;
+}
+
+ul .green {
+  background-color: #169e19 !important;
+  color: #fff;
+}
+
+ul .red {
+  background-color: #AE252F !important;
+  color: #fff;
+}
+
+ul .purple {
+  background-color: #9d16a3 !important;
+  color: #fff;
+}
+
+ul .blue {
+  background-color: #1357ba !important;
+  color: #fff;
+}
+
+ul .light-blue {
+  background-color: #338aec !important;
+  color: #fff;
+}
+
+ul .orange {
+  background-color: #D95735 !important;
+  color: #fff;
+}
+
+ul .twitter {
+  background-color: #20bcf0 !important;
+  color: #fff;
+}
+
+ul .facebook {
+  background-color: #3b579d !important;
+  color: #fff;
+}
+
+ul .linkedin {
+  background-color: #2088af !important;
+  color: #fff;
+}
+
+ul .instagram {
+  background-color: #444444 !important;
+  color: #fff;
+}
+
+ul .google {
+  background-color: #DF4231 !important;
+  color: #fff;
+}
+
+ul .youtube {
+  background-color: #C73A3F !important;
+  color: #fff;
+}
+
+ul .windows {
+  background-color: #3388eb !important;
+  color: #fff;
+}
+
+ul .pinterest {
+  background-color: #C73A3F !important;
+  color: #fff;
+}
+
+ul .vemo {
+  background-color: #ACD05F !important;
+  color: #fff;
+}
+
+ul .xbox {
+  background-color: #63aa2a !important;
+  color: #fff;
+}
+
+ul .github {
+  background-color: #222222 !important;
+  color: #fff;
+}
+
+ul .html5 {
+  background-color: #E86442 !important;
+  color: #fff;
+}
+
+.gridster ul li {
+  text-align: center;
+  list-style-type: none;
+}
+.gridster ul li .content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.gridster ul li .content h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.1rem;
+  font-weight: normal;
+}
+
+.gridster {
+  max-width: 960px;
+  margin: 5rem auto;
+}
+
+.preview-holder {
+  border: none !important;
+  border-radius: 0 !important;
+  background: rgba(255, 255, 255, 0.2) !important;

@@ -1,0 +1,110 @@
+.notifications-tab {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 40px;
+  width: 25vw;
+  min-width: 350px;
+  background: rgba(0, 0, 0, 0.85);
+  transform: translateX(100%);
+  -webkit-backdrop-filter: blur(5px);
+  transition: all 0.25s ease;
+}
+
+.notifications-tab.show {
+  transform: translateX(0);
+}
+
+.browse {
+  position: fixed;
+  left: 50px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: #464646;
+  transform: translateY(40px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.15s ease;
+}
+
+.browse.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.browse span {
+  padding: 20px;
+  color: lightgrey;
+  font-size: 24px;
+  display: block;
+  width: 350px;
+  transition: transform 0.25s ease, opacity 0.5s ease;
+}
+
+.browse span.hide {
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 0.25s ease, transform 0.5s ease;
+}
+
+.browse input {
+  dlay: block;
+  outline: none;
+  border: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.75);
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: 'Roboto';
+}
+
+.browse input:focus {
+  background: white;
+}
+
+.message-window {
+  min-height: 150px;
+  min-width: 300px;
+  background-color: whitesmoke;
+  position: fixed;
+  top: 100px;
+  left: 200px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  font-size: 20px;
+}
+
+.message-window .message {
+  padding: 5px;
+  display: inline-block;
+  width: 400px;
+}
+
+.message-window .controls {
+  height: 30px;
+  width: 100%;
+  background: lightgrey;
+  font-size: default;
+}
+
+.message-window .controls>span {
+  float: right;
+  line-height: 30px;
+  padding: 0 5px;
+  display: inline-block;
+}
+
+.message-window .controls>span:hover {
+  background: darkgrey;
+}
+
+.message-window .controls>span:first-child:hover {
+  background: crimson;
+  color: white;
+}
