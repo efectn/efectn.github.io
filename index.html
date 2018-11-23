@@ -22,6 +22,90 @@
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
+<styles
+.desktop #sound-modal {
+  background: #005a9e;
+  position: absolute;
+  right: 0;
+  bottom: 43px;
+  height: 100px;
+  width: 380px;
+  visibility: hidden;
+}
+
+.desktop #sound-modal i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  left: -20px !important;
+  color: whitesmoke;
+}
+
+.desktop #sound-modal span.data-value {
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  transform: translateY(-50%);
+  color: whitesmoke;
+}
+
+.desktop #sound-modal .sound-text {
+  text-align: center;
+  margin-top: 15px;
+  color: whitesmoke;
+}
+
+.desktop #sound-modal .sound-progress {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 70%;
+}
+
+.desktop #sound-modal .sound-progress .bar-sound {
+  width: 230px;
+  height: 5px;
+  background: linear-gradient(to right, #2989d8 0%, #2989d8 50%, grey 51%, grey 51%);
+}
+
+.desktop #sound-modal .sound-progress .bar-sound-drag {
+  height: 20px;
+  width: 7px;
+  background: #0078d7;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 3px;
+}
+
+.desktop #sound-modal:target {
+  visibility: visible;
+  animation-name: open-height;
+  animation-duration: 0.1s;
+  transition: 0.1s;
+}
+
+@keyframes open-height {
+  0% {
+    height: 50px;
+    opacity: 0.5;
+  }
+  100% {
+    height: 100px;
+    opacity: 1;
+  }
+}
+
+.desktop #sound-modal:hover .bar-sound-drag {
+  background: white;
+}
+	
+styles/>
+	
 </head>
 <body>
 	<div class="load-screen">
@@ -93,7 +177,7 @@
 		</div>
 		<div class="float-right">
 			<span class="material-icons more">keyboard_arrow_up</span>
-			<span class="material-icons volume">volume_up</span>
+			<span href="#sound-modal" class="material-icons volume">volume_up</span>
 			<div class="date-time">
 				<span class="time">00:00</span>
 				<span class="date">--/--/--</span>
@@ -115,5 +199,19 @@
 		<div class="hover-effect"></div>
 		<div class="hover-effect"></div>
 	</div>
+	
+	<!-- Speakers -->
+        <div id="sound-modal">
+            <div class="sound-text">
+                <span>Speakers</span>
+            </div>
+            <div class="sound-progress">
+                <i class="fas fa-volume-up"></i>
+                <div class="bar-sound"></div>
+                <div class="bar-sound-drag"></div> 
+                <span class="data-value">50%</span>   
+            </div>
+        </div>
+
 </body>
 </html>
